@@ -1,0 +1,113 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body
+{
+  min-height: 100vh;
+  background: green;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid black;
+  position: relative;
+}
+.Logo{
+  color:  green;
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.navbar a{
+  position: relative;
+  font-weight: 500;
+  margin-left: 40px;
+  text-decoration: none;
+  color: red;
+  font-size: 18px;
+}
+.navbar a:hover{
+  color: green;
+}
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  font-size: 16px;
+  width: 300px;
+  outline: none;
+
+}
+
+/* Button Container */
+.button-container {
+  display: inline-block;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.button-wrapper {
+  position: relative; /* Make the wrapper a positioned element */
+  display: inline-block; /* Allow the ribbon to position relative to the button */
+}
+
+
+
+.button {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 15px 20px; /* Enlarge the padding */
+  background-color: #444; /* Darker gray button color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-width: 200px;
+  width: 100%; /* Make button width 100% */
+}
+
+.button:hover {
+  background-color: #333; /* Even darker gray on hover */
+  text-decoration: none;
+}
+
+.button img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+/* Button Container 1 */
+.button-container1 {
+  display: flex;
+  justify-content: center; /* Distribute the buttons evenly along the container */
+  margin-top: 20px; /* Add margin to separate from other elements */
+}

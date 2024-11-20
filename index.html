@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Little Mexico Online</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="project/games.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="images/vecteezy_rendered-tacos-icon-3d-transparent_47308263.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   </head>
+   <body> 
+    
+    <Header class="header">
+        <a href="index.html" class="Logo">Little Mexico Online</a>
+
+        <nav class="navbar">
+            <a href="game.html">Games</a>
+            <a href="action.html">Movies</a>
+        </nav>
+    </Header>
+
+    <div class="Search">
+        <input type="text" id="searchInput" onkeyup="searchButtons()" placeholder="Search for games...">
+    </div>
+
+  
+    <div class="button-games1">
+        <button class="button"><a href='games/sandboxels'><img src="https://sandboxels.r74n.com/icons/icon.png" width="200" height="200" alt=""> <br>Sand Boxels</a></button>
+        <button class="button"><a href='games/sandboxels'><img src="https://sandboxels.r74n.com/icons/icon.png" width="200" height="200" alt=""> <br>Sand Boxels</a></button>
+    <body> 
+</body>  
+  <script>
+    function searchButtons() {
+        // Get the search query from the input field
+        var query = document.getElementById("searchInput").value.toLowerCase();
+
+        // Get all the buttons on the page
+        var buttons = document.getElementsByTagName("button");
+
+        // Loop through the buttons and check if their text contains the search query
+        for (var i = 0; i < buttons.length; i++) {
+            var buttonText = buttons[i].textContent.toLowerCase();
+            if (buttonText.includes(query)) {
+                buttons[i].style.display = "inline"; // Show the button
+            } else {
+                buttons[i].style.display = "none"; // Hide the button
+            }
+        }
+    }
+  </script>
+        
