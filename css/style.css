@@ -8,7 +8,7 @@
 body
 {
   min-height: 100vh;
-  background: green;
+  background: #444;
 }
 .header{
   position: fixed;
@@ -50,7 +50,7 @@ body
   width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: black; /* Set background color to black */
   color: white; /* Set text color to white */
   font-size: 16px;
